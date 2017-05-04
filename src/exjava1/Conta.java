@@ -7,7 +7,7 @@ public class Conta {
     private double saldo;
     private double limite;
     public static void main(String[] args) {
-        Conta conta2 = new Conta();
+        Conta conta2 = new Conta(); // contrutor 1 
     }
     private String sacar(double quantidade) {
         this.saldo -= quantidade;
@@ -21,7 +21,7 @@ public class Conta {
         System.out.println("---------Welcome to summoner's rift.----------");
         System.out.println("----------------------------------------------\n");
         int opcao = 1;
-        Conta conta =  new Conta(10, "Carlos Tinin", 2000, 300);
+        Conta conta =  new Conta(10, "Carlos Tinin", 2000, 300); // construtor 2
         Scanner entrada = new Scanner(System.in);
         while (opcao != 3){
             System.out.println("\n----  1   -->   Acessar conta.");
