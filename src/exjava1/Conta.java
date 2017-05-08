@@ -35,7 +35,7 @@ public class Conta {
                 System.out.println("Saldo: R$" + conta.getSaldo() + "0");
                 System.out.println("Limite: R$" + conta.getLimite() + "0\n");
                 System.out.println("Digite 1 para voltar ao menu e 3 para sair.");
-                opcao = entrada.nextInt();
+                opcao = entrada.nextInt();            
             }
             else if (opcao == 2) {
                 System.out.println("\nEm desenvolvimeto...");
