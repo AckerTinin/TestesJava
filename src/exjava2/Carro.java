@@ -4,13 +4,12 @@
  * and open the template in the editor.
  */
 package exjava2;
-import java.util.Scanner;
 /**
  *
  * @author chp51175
  */
 public class Carro extends Automovel{
-    
+     
     public Carro() {
         
     }

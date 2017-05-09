@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class Automovel {
     private String marca;
     private String modelo;
-    private final double preco;
-    private double precoSeguro;
+    protected final double preco;
+    protected double precoSeguro;
     private final String cor;
     
     public String getMarca() {
@@ -35,8 +35,11 @@ public class Automovel {
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
+    public void setPrecoSeguro(double precoSeguro) {
+        this.precoSeguro = precoSeguro;
+    }
     
-    private String precoSeguro(double preco) {
+    private String MPrecoSeguro(double preco) {
         this.precoSeguro = preco*0.01;
         System.out.println("Preco do seguro = R$"+precoSeguro+"0");
         return "";
@@ -52,7 +55,8 @@ public class Automovel {
         this.preco = entrada.nextDouble();
         System.out.println("Informe a cor do veículo: ");
         this.cor = entrada.next();
-        precoSeguro(preco);
+        this.precoSeguro = this.preco*0.01;
+        //System.out.println("Preco do seguro = R$"+precoSeguro+"0");
     }
     
 }
