@@ -1,19 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package exjava2;
-
+import java.util.*;
 /**
  *
- * @author chp51175
+ * @author Carlos André pereira Tinin
  */
 public class Utilitario extends Carro{
-    private float volumeCarga;
+    protected float volumeCarga;
 
-    public Utilitario(float volumeCarga) {
-        this.volumeCarga = volumeCarga;
+    public Utilitario() {
+        System.out.println("Informe o volume da carga: ");
+        Scanner entrada = new Scanner(System.in);
+        this.volumeCarga = entrada.nextFloat();
     }
     
     public float getVolumeCarga() {

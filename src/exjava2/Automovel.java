@@ -1,12 +1,12 @@
 package exjava2;
 import java.util.Scanner;
-
+// @author Carlos André pereira Tinin
 public class Automovel {
-    private String marca;
-    private String modelo;
+    protected String marca;
+    protected String modelo;
     protected final double preco;
     protected double precoSeguro;
-    private final String cor;
+    protected final String cor;
     
     public String getMarca() {
        return this.marca; 
@@ -56,7 +56,6 @@ public class Automovel {
         System.out.println("Informe a cor do veículo: ");
         this.cor = entrada.next();
         this.precoSeguro = this.preco*0.01;
-        //System.out.println("Preco do seguro = R$"+precoSeguro+"0");
     }
     
 }
